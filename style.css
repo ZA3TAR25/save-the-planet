@@ -1,0 +1,54 @@
+body{
+margin:0;
+font-family:Pacifico, cursive;
+background:#021e14;
+color:white;
+overflow-x:hidden;
+}
+
+/* title */
+.title{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%) scale(2);
+font-size:60px;
+z-index:10;
+animation:titleMove 2.5s forwards;
+}
+@keyframes titleMove{
+to{
+top:20px;
+transform:translate(-50%,0) scale(1);
+}
+}
+
+/* quotes */
+.quotes{
+padding-top:120px;
+}
+.block{
+max-width:800px;
+margin:80px auto;
+text-align:center;
+background:rgba(255,255,255,0.05);
+padding:20px;
+border-radius:20px;
+}
+.block img{
+width:100%;
+border-radius:15px;
+margin-bottom:15px;
+}
+.block p{
+font-size:22px;
+}
+
+/* canvas */
+#waterCanvas{
+position:fixed;
+top:0;
+left:0;
+pointer-events:none;
+z-index:0;
+}
